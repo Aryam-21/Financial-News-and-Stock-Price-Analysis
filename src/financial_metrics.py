@@ -4,10 +4,10 @@
 try:
     from pynance import stats
     def financial_metrics(closing_data):
-        returns = stats.returns(closing_data)
-        cumulative_returns = (1 + returns).cumprod()
+        returns_ = stats.returns(closing_data)
+        cumulative_returns = stats.returns.cumulative(returns_)
         volatility = stats.volatility(closing_data)
-        return returns,cumulative_returns,volatility
+        return returns_,cumulative_returns,volatility
 except Exception as e:
     pn = None
     def financial_metrics(closing_data):
