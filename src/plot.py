@@ -15,9 +15,9 @@ def moving_averages(closing_data, sma_20, ema_20):
     plt.legend()
     plt.show()
 
-def rsl_plot(rsl):
+def rsi_plot(rsi):
     plt.figure(figsize=(14,7))
-    plt.plot(rsl, label='RSL', color='purple')
+    plt.plot(rsi, label='RSL', color='purple')
     plt.axhline(70, color='red', linestyle='--')
     plt.axhline(30, color='green', linestyle='--')
     plt.title('Relative Strength Index (RSI)')
