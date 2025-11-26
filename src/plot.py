@@ -41,7 +41,7 @@ def daily_returns(returns):
 def macd_result(macd, macd_signal, macd_hist):
     plt.figure(figsize=(14,7))
     plt.plot(macd, label='MACD', color='r')
-    plt.plot(macd_signal, label='MACD_Sgnal', color="b" )
+    plt.plot(macd_signal, label='MACD_Signal', color="b" )
     plt.plot(macd_hist, label='MACD_Hist', color="GREEN")
     plt.title('Moving Average Convergence Divergence')
     plt.xlabel('Trading Date')
